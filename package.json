@@ -1,7 +1,7 @@
 {
   "name": "lt",
   "version": "1.0.0",
-  "description": "",
+  "description": "<p align=\"center\">   <a href=\"https://getbootstrap.com/\">     <img src=\"https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png\" alt=\"Bootstrap logo\" width=\"200\" height=\"165\">   </a> </p>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,13 @@
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgeraghty/LT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dgeraghty/LT/issues"
+  },
+  "homepage": "https://github.com/dgeraghty/LT#readme"
 }

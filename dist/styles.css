@@ -7425,7 +7425,7 @@ ul li {
   height: 100%; }
 
 .contain-wrap {
-  max-width: 1000px; }
+  max-width: 800px; }
 
 nav {
   z-index: 9999; }
@@ -7458,7 +7458,8 @@ nav {
 
 .nav-link {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: .9rem; }
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -7535,21 +7536,18 @@ nav {
       margin-bottom: 2%; } }
 
 .carousel-indicators > li {
-  margin: 0 .5rem;
+  margin: 0 .35rem;
   border-radius: 50%;
-  width: .75rem;
-  height: .75rem;
+  width: .65rem;
+  height: .65rem;
   background-color: rgba(255, 255, 255, 0.65);
   background-color: #fff;
   z-index: 1200; }
   @media (min-width: 768px) {
     .carousel-indicators > li {
-      width: 1rem;
-      height: 1rem; } }
-  @media (min-width: 1200px) {
-    .carousel-indicators > li {
-      width: 1.25rem;
-      height: 1.25rem; } }
+      margin: 0 .5rem;
+      width: .75rem;
+      height: .75rem; } }
 
 video {
   margin: 0;
@@ -7597,14 +7595,8 @@ video {
   z-index: 1000;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold; }
-  @media (min-width: 768px) {
-    .hero-description {
-      font-size: 24px; } }
-  @media (min-width: 1200px) {
-    .hero-description {
-      font-size: 24px; } }
 
 .hero-headline {
   z-index: 1000;
@@ -7614,22 +7606,22 @@ video {
   font-weight: bold; }
   @media (min-width: 768px) {
     .hero-headline {
-      font-size: 36px; } }
+      font-size: 24px; } }
   @media (min-width: 1200px) {
     .hero-headline {
-      font-size: 48px; } }
+      font-size: 32px; } }
 
 .headline {
   z-index: 1000;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold; }
   @media (min-width: 768px) {
     .headline {
-      font-size: 36px; } }
+      font-size: 24px; } }
   @media (min-width: 1200px) {
     .headline {
-      font-size: 48px; } }
+      font-size: 32px; } }
 
 .uppercase {
   text-transform: uppercase; }
@@ -7649,13 +7641,17 @@ video {
     top: 0;
     left: 0; }
 
+.about-experience h1, .about-experience .h1 {
+  padding: 0 12%; }
+
 .where-we-started p {
-  font-size: 1.3rem; }
+  font-size: 1rem; }
 
 .who-we-are {
   background-color: #ebebeb;
   padding: 0 10%;
-  margin: auto; }
+  margin: auto;
+  font-size: 1rem; }
 
 .hero-small {
   position: relative;
@@ -7689,6 +7685,9 @@ video {
   .mw-1000 p {
     margin: 0; }
 
+.wwa-inner {
+  max-width: 1000px; }
+
 .wwa-list {
   display: flex;
   flex-direction: column;
@@ -7720,7 +7719,7 @@ footer {
   footer .footer-wrap {
     max-width: 1600px; }
   footer p {
-    font-size: 1rem; }
+    font-size: .9rem; }
   footer ul {
     margin: auto;
     padding-left: 0;
@@ -7736,7 +7735,7 @@ footer {
     padding-bottom: 2rem; }
     footer .social img {
       margin-top: 50px;
-      width: 3rem; }
+      width: 2.4rem; }
   footer .footer-nav {
     font-weight: 600;
     padding: 3rem 0 3rem 2rem; }
