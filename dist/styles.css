@@ -7437,21 +7437,16 @@ nav {
   margin-right: 0; }
 
 .navbar {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #ebebeb; }
-
-.navbar-nav {
-  margin: 2rem 0 0 .5rem; }
-  @media (min-width: 768px) {
-    .navbar-nav {
-      margin: 0; } }
 
 .navbar-nav .navbar-collapse {
   justify-content: flex-end; }
 
 .navbar-brand {
-  padding-left: 1rem; }
+  padding: .7rem 0 .7rem .7rem;
+  width: 180px; }
 
 .nav-item {
   padding: 0 .8rem; }
@@ -7469,6 +7464,11 @@ nav {
   border: none;
   border-radius: 0;
   transition: box-shadow 0.15s ease-in-out; }
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none; }
 
 .btn {
   z-index: 9999;
@@ -7523,6 +7523,16 @@ nav {
   left: 0;
   min-height: 50vw; }
 
+.carousel-item-dark:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4); }
+
 .carousel-indicators {
   z-index: 9000; }
 
@@ -7561,6 +7571,15 @@ video {
   z-index: 50;
   margin-top: 5%;
   width: 100%; }
+
+.black-overlay {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200; }
 
 .headline-overlay {
   z-index: 100;
@@ -7642,14 +7661,19 @@ video {
     left: 0; }
 
 .about-experience h1, .about-experience .h1 {
-  padding: 0 12%; }
+  padding: 0 10%; }
+  @media (min-width: 768px) {
+    .about-experience h1, .about-experience .h1 {
+      padding: 0 15%; } }
+  @media (min-width: 1200px) {
+    .about-experience h1, .about-experience .h1 {
+      padding: 0 20%; } }
 
 .where-we-started p {
   font-size: 1rem; }
 
 .who-we-are {
   background-color: #ebebeb;
-  padding: 0 10%;
   margin: auto;
   font-size: 1rem; }
 
@@ -7669,24 +7693,26 @@ video {
 .about-list {
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
-  font-size: 1.1rem;
+  font-size: .9rem;
   align-content: center; }
-  .about-list p {
-    margin: 0;
+  .about-list h5, .about-list .h5 {
     font-weight: bold; }
   @media (min-width: 768px) {
     .about-list {
       flex-direction: row;
-      justify-content: space-between; } }
+      justify-content: space-evenly; } }
 
 .mw-1000 {
   max-width: 1000px; }
   .mw-1000 p {
-    margin: 0; }
+    margin: 0;
+    padding: 0 20px; }
+    @media (min-width: 768px) {
+      .mw-1000 p {
+        padding: 0 50px; } }
 
 .wwa-inner {
-  max-width: 1000px; }
+  max-width: 800px; }
 
 .wwa-list {
   display: flex;
@@ -7708,6 +7734,13 @@ video {
   padding-top: 30px;
   padding-bottom: 40px;
   background-color: #333; }
+  .awards .client {
+    width: 50%;
+    max-width: 300px;
+    vertical-align: text-bottom; }
+    @media (min-width: 768px) {
+      .awards .client {
+        width: 60%; } }
   .awards p {
     color: #fff;
     font-size: 110%;
@@ -7719,7 +7752,7 @@ footer {
   footer .footer-wrap {
     max-width: 1600px; }
   footer p {
-    font-size: .9rem; }
+    font-size: .8rem; }
   footer ul {
     margin: auto;
     padding-left: 0;
@@ -7737,8 +7770,14 @@ footer {
       margin-top: 50px;
       width: 2.4rem; }
   footer .footer-nav {
+    font-size: .9rem;
     font-weight: 600;
     padding: 3rem 0 3rem 2rem; }
+    footer .footer-nav a {
+      color: rgba(0, 0, 0, 0.7);
+      text-decoration: none; }
+      footer .footer-nav a:hover {
+        color: black; }
 
 .green {
   color: #c6e02d; }
