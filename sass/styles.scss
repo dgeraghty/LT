@@ -39,6 +39,12 @@ h1 {
 	font-weight: bold;
 }
 
+.sub-head-purple-c {
+	// text-transform: uppercase;
+	color: #071b6c;
+	font-weight: bold;
+}
+
 .bold {
 	font-weight: bold;
 }
@@ -67,9 +73,29 @@ nav {
 	margin-right: 0
 }
 
+.mw-1000 {
+	max-width: 1000px;
+	p {
+		margin: 0;
+		padding: 0 20px;
+
+		@media (min-width: $breakpoint-tablet) {
+			padding: 0 50px;
+		}
+	}
+
+
+
+}
+
+
+
+
+
+
 .navbar {
-	padding-top: 1rem;
-	padding-bottom: 1rem; 
+	padding-top: .5rem;
+	padding-bottom: .5rem; 
 	background-color: #ebebeb;
 }
 
@@ -286,10 +312,10 @@ video {
 	height: 60vw;
 
 	@media (min-width: $breakpoint-tablet) {
-		height: 40vw;
+		height: 30vw;
 	}
 	@media (min-width: $breakpoint-desktop) {
-		height: 40vw;
+		height: 30vw;
 	}
   }
 
@@ -436,8 +462,8 @@ video {
 	flex-direction: column;
 	font-size: .9rem;
 	align-content: center;
+
 	h5 {
-		// margin: 0;
 		font-weight: bold;
 	}
 
@@ -447,20 +473,7 @@ video {
 	}
 }
 
-.mw-1000 {
-	max-width: 1000px;
-	p {
-		margin: 0;
-		padding: 0 20px;
 
-		@media (min-width: $breakpoint-tablet) {
-			padding: 0 50px;
-		}
-	}
-
-
-
-}
 
 .wwa-inner {
 	max-width: 800px;
@@ -469,7 +482,7 @@ video {
 .wwa-list {
 	display: flex;
 	flex-direction: column;
-	padding-right: 30px;
+	padding-right: 45px;
 	font-size: 1.1rem;
 	
 	p {
@@ -499,8 +512,8 @@ video {
 	background-color: #333;
 
 	.client {
-		width: 50%;
-		max-width: 300px;
+		width: 40%;
+		max-width: 250px;
 		vertical-align: text-bottom;
 		
 		@media (min-width: $breakpoint-tablet) {
@@ -515,6 +528,9 @@ video {
 		line-height: 31px;
 	}
 }
+
+
+
 
 footer {
 	background-color: #ebebeb;
