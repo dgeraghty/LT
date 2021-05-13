@@ -7771,7 +7771,7 @@ video {
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default; }
+  cursor: pointer; }
 
 .hovereffect .overlay {
   width: 100%;
@@ -7804,13 +7804,9 @@ video {
   transition: all .2s ease-in-out;
   padding: 10px; }
 
-.hovereffect a.info {
-  width: 100%;
+.work-link {
   display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0;
-  background-color: transparent; }
+  cursor: pointer; }
 
 .hovereffect:hover img {
   -ms-transform: scale(1.2);
