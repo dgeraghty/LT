@@ -7410,8 +7410,8 @@ html, body {
 ul li {
   list-style: none; }
 
-.uppercase {
-  text-transform: uppercase; }
+h1, .h1 {
+  font-weight: bold; }
 
 .sub-head-purple {
   text-transform: uppercase;
@@ -7425,6 +7425,9 @@ ul li {
 .bold {
   font-weight: bold; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 .divider {
   content: "";
   background-color: #071b6c;
@@ -7433,9 +7436,6 @@ ul li {
 
 .contain-wrap {
   max-width: 800px; }
-
-nav {
-  z-index: 9999; }
 
 .remove-padding {
   padding-left: 0;
@@ -7454,6 +7454,9 @@ nav {
 
 .mw-1600 {
   max-width: 1600px; }
+
+nav {
+  z-index: 9999; }
 
 .navbar {
   padding-top: .5rem;
@@ -7524,6 +7527,7 @@ nav {
 .carousel .carousel-item {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
+  transform: translateZ(0);
   height: 80vw; }
   @media (min-width: 768px) {
     .carousel .carousel-item {
@@ -7608,6 +7612,7 @@ video {
 .about-carousel.carousel .about-carousel.carousel-item {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
+  transform: translateZ(0);
   height: 60vw; }
   @media (min-width: 768px) {
     .about-carousel.carousel .about-carousel.carousel-item {
@@ -7665,6 +7670,41 @@ video {
     .headline {
       font-size: 32px; } }
 
+.hero-small {
+  position: relative;
+  height: 30vw;
+  min-height: 250px; }
+
+.hero-small-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0; }
+
+.hero-large {
+  position: relative;
+  height: 45vw;
+  min-height: 250px; }
+
+.hero-small-lrg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0; }
+
+.sub-head {
+  color: #fff;
+  z-index: 200;
+  text-align: center;
+  padding: 0 20px; }
+  @media (min-width: 768px) {
+    .sub-head {
+      padding: 0 20%; } }
+
 .about {
   padding-top: 20px;
   background-color: #071b6c;
@@ -7696,32 +7736,6 @@ video {
   background-color: #ebebeb;
   margin: auto;
   font-size: 1rem; }
-
-.hero-small {
-  position: relative;
-  height: 30vw;
-  min-height: 250px; }
-
-.hero-small-img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0; }
-
-.hero-large {
-  position: relative;
-  height: 45vw;
-  min-height: 250px; }
-
-.hero-small-lrg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0; }
 
 .about-list {
   display: flex;
@@ -7771,103 +7785,105 @@ video {
     font-weight: bold;
     line-height: 31px; }
 
-.tile {
-  height: 100%; }
+.work img {
+  padding: 50px 20px; }
   @media (min-width: 768px) {
-    .tile {
-      height: 35vh; } }
+    .work img {
+      padding: 100px 100px; } }
 
-.work-thumb {
-  width: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0; }
+.work p {
+  padding: 0; }
+  @media (min-width: 768px) {
+    .work p {
+      padding: 0 100px; } }
+
+.work ul li h4, .work ul li .h4 {
+  padding: 1rem 0; }
 
 .work-link {
-  display: block;
-  cursor: pointer; }
+  text-decoration: none; }
 
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
+.hover {
   overflow: hidden;
   position: relative;
+  padding-bottom: 60%;
+  height: 35vw;
+  max-height: 500px;
   text-align: center;
-  cursor: pointer; }
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
-.hovereffect .overlay {
+.hover-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
-  overflow: hidden;
   top: 0;
   left: 0;
-  opacity: 0;
-  background-color: rgba(69, 34, 172, 0.5);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
+  z-index: 90;
+  transition: all 0.4s;
+  opacity: 0; }
 
-.hovereffect img {
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  object-fit: cover; }
+
+.hover-content {
+  position: relative;
+  z-index: 2000; }
+
+.hover-1 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
+  transition: all 0.5s;
+  object-fit: cover; }
 
-.hovereffect h3, .hovereffect .h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  position: absolute;
-  padding: 0 5rem;
-  top: 14vw;
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-transform: translatey(1vw);
-  -ms-transform: translatey(1vw);
-  transform: translatey(1vw);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+.hover-1-content {
+  margin-top: 25rem;
+  z-index: 99;
+  transition: all 0.5s;
+  text-align: center; }
+
+.hover-1 .hover-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99; }
+
+.hover-1-title {
+  transform: translateY(0.5rem);
+  transition: all 0.5s;
   opacity: 0;
-  filter: alpha(opacity=0); }
-
-.hovereffect h4, .hovereffect .h4 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  position: absolute;
-  top: 16vw;
-  padding: 0 1rem;
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-transform: translatey(1vw);
-  -ms-transform: translatey(1vw);
-  transform: translatey(1vw);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  font-weight: bold; }
+  @media (min-width: 768px) {
+    .hover-1-title {
+      font-size: 1.5rem; } }
+
+.hover-1-description {
+  transform: translateY(0.8rem);
+  transition: all 0.8s;
   opacity: 0;
-  filter: alpha(opacity=0); }
+  color: #fff;
+  text-align: center; }
 
-.hovereffect:hover img {
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2); }
+.hover-1:hover .hover-1-content {
+  margin-top: 60%; }
 
-.hovereffect:hover .overlay {
+.hover-1:hover .hover-1-description, .hover-1:hover .hover-1-title {
   opacity: 1;
-  filter: alpha(opacity=100); }
+  transform: none; }
 
-.hovereffect:hover h3, .hovereffect:hover .h3, .hovereffect:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -ms-transform: translatey(0);
-  -webkit-transform: translatey(0);
-  transform: translatey(0); }
+.hover-1:hover img {
+  transform: scale(1.1); }
 
-.hovereffect:hover h4, .hovereffect:hover .h4, .hovereffect:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -ms-transform: translatey(0);
-  -webkit-transform: translatey(0);
-  transform: translatey(0); }
+.hover-1:hover .hover-overlay {
+  opacity: 1; }
 
 .pulse {
   background-color: #eee; }
@@ -7889,6 +7905,9 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.form-control {
+  border-radius: 0; }
 
 footer {
   background-color: #ddd; }
