@@ -7616,7 +7616,6 @@ video {
 
 .headline-overlay {
   z-index: 100;
-  margin-top: 2%;
   width: 100vw; }
 
 .about-carousel.carousel .about-carousel.carousel-item {
@@ -7742,8 +7741,10 @@ video {
   .about .about-headline {
     position: absolute;
     width: 100vw;
-    top: 0;
-    left: 0; }
+    height: 100%;
+    top: -10%;
+    left: 0;
+    z-index: 100; }
 
 .about-carousel .hero-headline {
   font-size: 1rem; }

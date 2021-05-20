@@ -10,6 +10,7 @@
 $breakpoint-mobile: 567px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1200px;
+$breakpoint-desktop-xl: 1600px;
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss'; 
@@ -321,7 +322,7 @@ video {
 
 .headline-overlay {
 	z-index: 100;
-	margin-top: 2%;
+	// margin-top: 2%;
 	width: 100vw;
 }
 
@@ -486,9 +487,12 @@ video {
 
 	.about-headline {
 		position: absolute;
+		// width: 100vw;
 		width: 100vw;
-		top: 0;
+		height: 100%;
+		top:-10%;
 		left: 0;
+		z-index: 100;
 	}
 	
 
