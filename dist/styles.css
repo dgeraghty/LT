@@ -7583,13 +7583,12 @@ nav {
   border-radius: 50%;
   width: .65rem;
   height: .65rem;
-  background-color: rgba(255, 255, 255, 0.65);
-  background-color: #fff; }
+  background-color: rgba(255, 255, 255, 0.65); }
   @media (min-width: 768px) {
     .carousel-indicators > li {
-      margin: 0 .5rem;
-      width: .75rem;
-      height: .75rem; } }
+      margin: 0 .4rem;
+      width: .85rem;
+      height: .85rem; } }
 
 video {
   margin: 0;
@@ -7638,9 +7637,13 @@ video {
   z-index: 1000;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-size: 1rem;
-  font-weight: bold; }
+  font-size: .8rem;
+  font-weight: bold;
+  margin-bottom: 10px; }
   @media (min-width: 768px) {
+    .hero-description {
+      font-size: 1.25rem; } }
+  @media (min-width: 1200px) {
     .hero-description {
       font-size: 1.5rem; } }
 
@@ -7648,15 +7651,19 @@ video {
   z-index: 1000;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px;
+  max-width: 500px; }
   @media (min-width: 768px) {
     .hero-headline {
-      font-size: 2rem; } }
+      font-size: 2.25rem;
+      max-width: 600px; } }
   @media (min-width: 1200px) {
     .hero-headline {
-      font-size: 2.5rem; } }
+      font-size: 2.75rem;
+      max-width: 800px; } }
 
 .headline {
   z-index: 1000;
@@ -7773,12 +7780,22 @@ video {
   padding-bottom: 40px;
   background-color: #333; }
   .awards .client {
-    width: 40%;
+    width: 50%;
     max-width: 250px;
     vertical-align: text-bottom; }
     @media (min-width: 768px) {
       .awards .client {
         width: 60%; } }
+  .awards .client-bot {
+    margin-top: -60px; }
+    @media (min-width: 768px) {
+      .awards .client-bot {
+        margin-top: 0; } }
+  .awards .client-mid {
+    margin-top: 20px; }
+    @media (min-width: 768px) {
+      .awards .client-mid {
+        margin-top: 0; } }
   .awards p {
     color: #fff;
     font-size: 110%;
@@ -7884,6 +7901,14 @@ video {
 
 .hover-1:hover .hover-overlay {
   opacity: 1; }
+
+.careers p {
+  padding: 0 150px; }
+
+.postings {
+  width: 100%;
+  height: 500px;
+  background-color: #eee; }
 
 .pulse {
   background-color: #eee; }

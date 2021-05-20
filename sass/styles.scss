@@ -284,14 +284,14 @@ nav {
 	margin: 0 .35rem;
 	border-radius: 50%;
 	width:.65rem;
-  	height:.65rem;
-  	background-color: rgba($color: #ffffff, $alpha: 0.65);
-  	background-color: #fff;
+  height:.65rem;
+  background-color: rgba($color: #ffffff, $alpha: 0.65);
+  // background-color: #fff;
 
 	@media (min-width: $breakpoint-tablet) {
-		margin: 0 .5rem;
-		width:.75rem;
-		height:.75rem;
+		margin: 0 .4rem;
+		width:.85rem;
+		height:.85rem;
 	}
 }
 
@@ -354,30 +354,35 @@ video {
 	z-index: 1000;
 	font-family: 'Montserrat', sans-serif;
 	color:#fff;
-	font-size: 1rem;
+	font-size: .8rem;
 	font-weight:bold;
+	margin-bottom: 10px;
 
 	@media (min-width: $breakpoint-tablet) {
+		font-size: 1.25rem;
+	}
+	@media (min-width: $breakpoint-desktop) {
 		font-size: 1.5rem;
 	}
-	// @media (min-width: $breakpoint-desktop) {
-	// 	font-size: 2rem;
-	// }
 }
 
 .hero-headline {
 	z-index: 1000;
 	font-family: 'Montserrat', sans-serif;
 	color:#fff;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight:bold;
 	text-align: center;
+	margin-bottom: 10px;
+	max-width: 500px;
 
 	@media (min-width: $breakpoint-tablet) {
-		font-size: 2rem;
+		font-size: 2.25rem;
+		max-width: 600px;
 	}
 	@media (min-width: $breakpoint-desktop) {
-		font-size: 2.5rem;
+		font-size: 2.75rem;
+		max-width: 800px;
 	}
 }
 
@@ -547,17 +552,31 @@ video {
 .awards {
 	padding-top: 30px;
 	padding-bottom: 40px;
-	//padding: 20px 0;
-	// height: 30vw;
 	background-color: #333;
 
 	.client {
-		width: 40%;
+		width: 50%;
 		max-width: 250px;
 		vertical-align: text-bottom;
 		
 		@media (min-width: $breakpoint-tablet) {
 			width: 60%;
+		}
+	}
+
+	.client-bot {
+		margin-top: -60px;
+
+		@media (min-width: $breakpoint-tablet) {
+			margin-top: 0;
+		}
+	}
+
+	.client-mid {
+		margin-top: 20px;
+		
+		@media (min-width: $breakpoint-tablet) {
+			margin-top: 0;
 		}
 	}
 
@@ -572,26 +591,6 @@ video {
 //==============================WORK==============================//
 
 
-
-
-// .tile {
-// 	height: 25vh;
-
-// 	@media (min-width: $breakpoint-tablet) {
-			// height: 400px;
-// 	}
-// } 
-// .work-thumb {
-// 	width: 100%;
-// 	object-fit:cover;
-// 	top: 0;
-// 	left: 0;
-// }
-
-// .work-link{
-// 	display: block;
-// 	cursor: pointer;
-// }
 .work {
 	img {
 		padding: 50px 20px;
@@ -662,8 +661,6 @@ video {
 }
 
 
-
-
 .hover-1 img {
   width: 100%;
 	height: 100%;
@@ -672,9 +669,6 @@ video {
 }
 
 .hover-1-content {
-	// margin-top: 50%;
-	// position: relative;
-	// display: inline-block;
 	margin-top: 25rem;
   z-index: 99;
   transition: all 0.5s;
@@ -725,6 +719,25 @@ video {
 .hover-1:hover .hover-overlay {
   opacity: 1;
 }
+
+
+
+//==============================CAREERS==============================//
+
+
+.careers {
+	p {
+		padding: 0 150px;
+	}
+}
+
+.postings {
+	width: 100%;
+	height: 500px;
+	background-color: #eee;
+}
+
+
 
 //==============================PULSE==============================//
 
