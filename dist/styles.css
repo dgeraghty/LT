@@ -7625,7 +7625,7 @@ video {
   height: 60vw; }
   @media (min-width: 768px) {
     .about-carousel.carousel .about-carousel.carousel-item {
-      height: 30vw; } }
+      height: 40vw; } }
   @media (min-width: 1200px) {
     .about-carousel.carousel .about-carousel.carousel-item {
       height: 30vw; } }
@@ -7706,10 +7706,49 @@ video {
   position: relative;
   height: 50vw;
   min-height: 250px; }
+  .hero-large .headline-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.25); }
+    @media (min-width: 768px) {
+      .hero-large .headline-overlay {
+        transform: scale(1); } }
+  @media (min-width: 1600px) {
+    .hero-large {
+      height: 40vw; } }
   .hero-large a {
     display: none; }
     @media (min-width: 768px) {
       .hero-large a {
+        display: flex; } }
+
+.hero-med {
+  position: relative;
+  height: 25vw; }
+  .hero-med .headline-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1.75); }
+    @media (min-width: 768px) {
+      .hero-med .headline-overlay {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scale(1); } }
+  @media (min-width: 1600px) {
+    .hero-med {
+      height: 30vw; } }
+  .hero-med a {
+    display: none; }
+    @media (min-width: 768px) {
+      .hero-med a {
         display: flex; } }
 
 .hero-small-lrg {
@@ -7975,7 +8014,10 @@ video {
 .postings {
   width: 100%;
   height: 500px;
-  background-color: #eee; }
+  background: #262324;
+  background: linear-gradient(225deg, #262324 0%, #58595b 100%); }
+  .postings H3 {
+    color: #FFF; }
 
 .pulse {
   background-color: #eee; }
