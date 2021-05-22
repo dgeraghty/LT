@@ -7463,17 +7463,16 @@ h1, .h1 {
   margin-right: 0; }
 
 .mw-800 {
-  max-width: 800px; }
+  max-width: 800px;
+  margin: 0 auto; }
 
 .mw-1000 {
   max-width: 1000px;
-  margin: auto; }
-  .mw-1000 p {
-    margin: 0;
-    padding: 0 20px; }
+  margin: 0 auto; }
 
 .mw-1600 {
-  max-width: 1600px; }
+  max-width: 1600px;
+  margin: 0 auto; }
 
 .btn {
   z-index: 9999;
@@ -7839,15 +7838,32 @@ video {
       .about-experience h1, .about-experience .h1 {
         padding: 0 20%; } }
 
+@media (min-width: 768px) {
+  .expertise {
+    font-size: 1.1rem; } }
+
 .where-we-started {
-  padding: 50px 0; }
+  padding: 50px 25px; }
   .where-we-started p {
     font-size: 1rem; }
+    @media (min-width: 768px) {
+      .where-we-started p {
+        padding: 0 60px; } }
+    @media (min-width: 992px) {
+      .where-we-started p {
+        padding: 0 100px; } }
 
 .who-we-are {
-  padding: 50px 0;
-  background-color: #ebebeb;
-  font-size: 1rem; }
+  padding: 50px 25px;
+  background-color: #ebebeb; }
+  .who-we-are p {
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      .who-we-are p {
+        padding: 0 60px; } }
+    @media (min-width: 992px) {
+      .who-we-are p {
+        padding: 0 100px; } }
 
 .about-list {
   display: flex;
@@ -7869,7 +7885,10 @@ video {
   flex-direction: column;
   font-size: 1rem; }
   .wwa-list p {
-    padding-bottom: 1rem; }
+    margin-bottom: 15px; }
+    @media (min-width: 768px) {
+      .wwa-list p {
+        margin-bottom: 0; } }
   @media (min-width: 768px) {
     .wwa-list {
       flex-direction: row;
@@ -8070,6 +8089,9 @@ video {
   @media (min-width: 768px) {
     .careers {
       padding: 70px 130px; } }
+  @media (min-width: 1200px) {
+    .careers {
+      padding: 70px 30px; } }
 
 .postings {
   width: 100%;
@@ -8145,7 +8167,7 @@ footer {
   footer .footer-nav {
     font-size: .9rem;
     font-weight: 600;
-    padding: 3rem 0 3rem 0; }
+    padding: 2rem 0 2rem 0; }
     footer .footer-nav ul {
       margin: auto;
       padding-left: 0;
@@ -8182,11 +8204,15 @@ footer {
     flex-direction: column;
     justify-content: space-between; }
   footer .social {
-    padding-bottom: 2rem; }
+    padding: 2rem 0; }
+    @media (min-width: 992px) {
+      footer .social {
+        padding: 2rem 1rem 2rem 0; } }
     footer .social ul {
       display: flex;
       justify-content: center;
-      padding: 0; }
+      padding: 0;
+      margin: 0; }
       @media (min-width: 992px) {
         footer .social ul {
           justify-content: flex-end; } }
@@ -8194,16 +8220,14 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: .5rem; }
+        padding: 0 .5rem; }
         @media (min-width: 992px) {
           footer .social ul li {
             justify-content: flex-start; } }
     footer .social img {
-      margin-top: 35px;
-      width: 2.4rem; }
-      @media (min-width: 768px) {
-        footer .social img {
-          width: 2.1rem; } }
+      width: 2rem;
+      height: 2rem; }
       @media (min-width: 1200px) {
         footer .social img {
-          width: 1.9rem; } }
+          width: 2rem;
+          height: 2rem; } }
