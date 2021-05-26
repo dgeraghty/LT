@@ -42,7 +42,9 @@ h1 {
 
 //==============================COLORS==============================//
 
-
+.white	{
+	color:#ffffff;
+}
 
 .purple {
 	color: #071b6c !important;
@@ -58,7 +60,7 @@ h1 {
 
 
 .light-grey {
-	background-color: #c9cfcf;
+	background-color: #d9d9d9;
 }
 
 .med-grey {
@@ -67,7 +69,7 @@ h1 {
 }
 
 .dark-grey {
-	background-color: #494c4c;
+	background-color: #333333;
 }
 
 
@@ -911,7 +913,7 @@ video {
 	font-size: 1.25rem;
 	line-height: 1.2;
 	font-weight: bold;
-	// text-transform: capitalize;
+	text-transform: capitalize;
 
 	@media (min-width: $breakpoint-tablet) {
 		opacity: 1;
@@ -1172,7 +1174,6 @@ footer {
 		}
 
 		img {
-			// margin-top: 35px;
 			width: 2rem;
 			height: 2rem;
 

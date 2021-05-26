@@ -7416,6 +7416,9 @@ ul li {
 h1, .h1 {
   font-weight: bold; }
 
+.white {
+  color: #ffffff; }
+
 .purple {
   color: #071b6c !important; }
 
@@ -7426,14 +7429,14 @@ h1, .h1 {
   color: #c6e02d !important; }
 
 .light-grey {
-  background-color: #c9cfcf; }
+  background-color: #d9d9d9; }
 
 .med-grey {
   background-color: #868b8b;
   color: white; }
 
 .dark-grey {
-  background-color: #494c4c; }
+  background-color: #333333; }
 
 .sub-head-purple {
   text-transform: uppercase;
@@ -8061,7 +8064,8 @@ video {
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.2;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: capitalize; }
   @media (min-width: 768px) {
     .hover-1-description {
       opacity: 1;
