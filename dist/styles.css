@@ -7805,6 +7805,44 @@ video {
     .sub-head {
       padding: 0 20%; } }
 
+.awards {
+  padding: 30px 0;
+  background-color: #333; }
+  .awards .client {
+    width: 40%;
+    max-width: 250px;
+    vertical-align: text-bottom; }
+    @media (min-width: 768px) {
+      .awards .client {
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .awards .client {
+        width: 45%; } }
+  .awards .client-top {
+    margin-top: -40px; }
+    @media (min-width: 768px) {
+      .awards .client-top {
+        margin-top: 0; } }
+  .awards .client-bot {
+    margin-top: -60px; }
+    @media (min-width: 768px) {
+      .awards .client-bot {
+        margin-top: 0; } }
+  .awards .client-mid {
+    margin-top: 0; }
+    @media (min-width: 768px) {
+      .awards .client-mid {
+        margin-top: 0; } }
+  .awards p {
+    color: #fff;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 20px 0 30px 0; }
+    @media (min-width: 768px) {
+      .awards p {
+        line-height: 1.4;
+        font-size: 1rem; } }
+
 .about .headline-overlay {
   transform: scale(1); }
 
@@ -7919,59 +7957,39 @@ video {
     .container-wwa ul li h5, .container-wwa ul li .h5 {
       font-weight: bold; }
 
-.work img {
-  padding: 50px 20px; }
-  @media (min-width: 768px) {
-    .work img {
-      padding: 100px 100px; } }
-
 .work p {
   padding: 0; }
   @media (min-width: 768px) {
     .work p {
-      padding: 0 120px; } }
+      padding: 0 80px; } }
 
 .work ul li h4, .work ul li .h4 {
   padding: 1rem 0;
-  color: #071b6c; }
+  color: #fff; }
 
-.awards {
-  padding: 30px 0;
-  background-color: #333; }
-  .awards .client {
-    width: 40%;
-    max-width: 250px;
-    vertical-align: text-bottom; }
-    @media (min-width: 768px) {
-      .awards .client {
-        width: 50%; } }
-    @media (min-width: 992px) {
-      .awards .client {
-        width: 45%; } }
-  .awards .client-top {
-    margin-top: -40px; }
-    @media (min-width: 768px) {
-      .awards .client-top {
-        margin-top: 0; } }
-  .awards .client-bot {
-    margin-top: -60px; }
-    @media (min-width: 768px) {
-      .awards .client-bot {
-        margin-top: 0; } }
-  .awards .client-mid {
-    margin-top: 0; }
-    @media (min-width: 768px) {
-      .awards .client-mid {
-        margin-top: 0; } }
-  .awards p {
-    color: #fff;
-    font-weight: bold;
-    line-height: 28px;
-    padding: 20px 0 30px 0; }
-    @media (min-width: 768px) {
-      .awards p {
-        line-height: 1.4;
-        font-size: 1rem; } }
+.work-image {
+  height: 300px;
+  padding: 0;
+  vertical-align: bottom; }
+  @media (min-width: 768px) {
+    .work-image {
+      height: 400px; } }
+  .work-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+.challenge {
+  background-color: #d9d9d9; }
+
+.results {
+  background: #061b6e;
+  background: linear-gradient(225deg, #061b6e 0%, #6a00ff 100%); }
+  .results hr {
+    border-bottom: 2px solid #fff;
+    width: 500px;
+    margin: 10px auto;
+    z-index: 100; }
 
 .work-link {
   text-decoration: none; }
